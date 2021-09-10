@@ -44,7 +44,7 @@
             "command": "cmd",
             "group": "test",
             "args": [
-                "/C", "${fileDirname}\\${relativeFileDirname}"
+                "/C", "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ]
         },
         // 디버깅 실행
