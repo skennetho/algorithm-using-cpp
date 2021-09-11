@@ -36,11 +36,26 @@ int main(){
     cin>> str;
     solution(str);
 
-    str = "Mississipi";
-    solution(str);
-    str = "zZa";
-    solution(str);
-    str = "a";
-    solution(str);
+    // str = "Mississipi";
+    // solution(str);
+    // str = "zZa";
+    // solution(str);
+    // str = "a";
+    // solution(str);
 }
+
+/* 모범 답안이라고 생각되는 코드
+#include<cstdio>
+int a[99],m;
+char r,c;
+int main() {
+    while (~scanf(" %c", &c)) {
+        if (c > 'Z') c += 'A'-'a';
+        if (++a[c] > m) m = a[c], r = c;
+        else if (a[c] == m) r = '?';
+    }
+    putchar(r);
+    return 0;
+}
+*/
 
