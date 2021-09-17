@@ -16,7 +16,7 @@ int main(){
     }
 
     sort(list.begin(), list.end());
-    for(int i =0 ; i< n; i++){
-        cout<< list[i].second<<" "<< list[i].first<<endl;
+    for(pair<int, int> p : list){
+        printf("%d %d \n", p.second, p.first );
     }
 }
