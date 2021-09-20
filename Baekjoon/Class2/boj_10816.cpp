@@ -18,6 +18,7 @@ int lower_bound(vector<int> & arr, int start, int end, int target){
 
     return lower_bound(arr, start, end, target);
 }
+
 int upper_bound(vector<int> & arr, int start, int end, int target){
     int mid = (start +end)/2;
 
@@ -32,12 +33,7 @@ int upper_bound(vector<int> & arr, int start, int end, int target){
 
     return upper_bound(arr, start, end, target);
 }
-/*
-6
-1 1 2 2 3 3
-3
-1 2 3
-*/
+
 int main(){
     int n=0;
     cin>> n;
