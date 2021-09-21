@@ -3,6 +3,10 @@
 using namespace std;
 
 int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
     int n ; 
     cin >> n ;
 
@@ -20,29 +24,3 @@ int main(){
         }
     }
 }
-
-// int main(){
-//     int n ; 
-//     cin >> n ;
-
-//     vector<int> arr(n);
-//     priority_queue<int> priorQue;
-//     for(int i =0 ;i< n ; i++){
-//         int num;
-//         cin>> num;
-//         priorQue.push(num);
-//     }
-    
-//     while(!priorQue.empty()){
-//         arr[--n] =priorQue.top();
-//         priorQue.pop();
-//     }
-
-//     for(int &num : arr){
-//         cout<< num<< '\n';
-//     }
-// }
-/*
-
-
-*/
