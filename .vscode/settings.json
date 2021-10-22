@@ -16,6 +16,7 @@
         "tuple": "cpp",
         "type_traits": "cpp",
         "deque": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "*.tcc": "cpp"
     }
 }
