@@ -5,8 +5,19 @@ using namespace std;
 
 
 int main(){
-    constexpr int n = 5;
-    array<int,n> arr;
+    bool arr[30];
+    arr[0] = true;
+    arr[1] = true;
+
+    for(int i =2 ; i< 30; i++){
+        for(int j =2 ; j<30 ; j ++){
+            if( i*j> 30) break;
+
+            if( arr[i] = false){
+                arr[i*j]  =
+            }
+        }
+    }
 
     return 0;
 }
