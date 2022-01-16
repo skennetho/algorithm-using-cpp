@@ -1,5 +1,5 @@
-//https://www.acmicpc.net/problem/11021
-// A+B-7
+//https://www.acmicpc.net/problem/11022
+// A+B - 8
 #include <iostream>
 
 using namespace std;
@@ -11,6 +11,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         int a, b;
         scanf("%d %d", &a, &b);
-        printf("Case #%d: %d\n", (i + 1), (a + b));
+        printf("Case #%d: %d + %d = %d\n", (i + 1), a, b, (a + b));
     }
 }
