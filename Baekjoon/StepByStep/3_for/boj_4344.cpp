@@ -17,7 +17,7 @@ int main() {
         for (int i = 0; i < n; i++) {
             int num;
             scanf("%f", &scores[i]);
-            // scores[i] = (double)num;
+            scores[i] = (double)num;
             average += scores[i];
         }
 
