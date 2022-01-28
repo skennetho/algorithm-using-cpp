@@ -17,6 +17,19 @@
         "type_traits": "cpp",
         "deque": "cpp",
         "sstream": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "map": "cpp",
+        "atomic": "cpp",
+        "bitset": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "memory_resource": "cpp",
+        "memory": "cpp",
+        "random": "cpp",
+        "fstream": "cpp",
+        "stdexcept": "cpp",
+        "regex": "cpp",
+        "valarray": "cpp"
     }
 }
