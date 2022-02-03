@@ -41,8 +41,7 @@ int main() {
         }
         multiset<int>::iterator iter = mSet.end();
         iter--;
-        mSet.erase(iter);
-        printf("%d %d", *iter, *mSet.begin());
+        printf("%d %d\n", *iter, *mSet.begin());
 
     }
 }
