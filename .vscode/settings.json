@@ -30,6 +30,7 @@
         "fstream": "cpp",
         "stdexcept": "cpp",
         "regex": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "functional": "cpp"
     }
 }
