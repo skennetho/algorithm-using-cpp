@@ -1,2 +1,5 @@
 *.exe
 .vscode/*
+in.txt
+x64/*
+.vs/
