@@ -312,6 +312,9 @@
     <ClCompile Include="programmers\weekly_challenge\상호평가\solution.cpp">
       <Filter>Source Files\NotCategorized</Filter>
     </ClCompile>
+    <ClCompile Include="boj_2667.cpp">
+      <Filter>Source Files\class3++</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore">
