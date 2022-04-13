@@ -333,6 +333,9 @@
     <ClCompile Include="boj_5430.cpp">
       <Filter>Source Files\class3++</Filter>
     </ClCompile>
+    <ClCompile Include="boj_7569.cpp">
+      <Filter>Source Files\class3++</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore">
