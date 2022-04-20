@@ -19,6 +19,9 @@
     <Filter Include="Source Files\NotCategorized">
       <UniqueIdentifier>{f04d0236-1a35-45aa-b111-38f4de784439}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\NewFilter1">
+      <UniqueIdentifier>{01195f15-4e88-4219-a876-a386ec4e4fb5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="baekjoon\class3++\boj_2178.cpp">
@@ -312,29 +315,32 @@
     <ClCompile Include="programmers\weekly_challenge\상호평가\solution.cpp">
       <Filter>Source Files\NotCategorized</Filter>
     </ClCompile>
-    <ClCompile Include="boj_2667.cpp">
+    <ClCompile Include="Baekjoon\Class3++\boj_2667.cpp">
       <Filter>Source Files\class3++</Filter>
     </ClCompile>
-    <ClCompile Include="boj_6064.cpp">
+    <ClCompile Include="Baekjoon\Class3++\boj_6064.cpp">
       <Filter>Source Files\class3++</Filter>
     </ClCompile>
     <ClCompile Include="test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="boj_11286.cpp">
+    <ClCompile Include="Baekjoon\Class3++\boj_11286.cpp">
       <Filter>Source Files\class3++</Filter>
     </ClCompile>
-    <ClCompile Include="boj_11403.cpp">
+    <ClCompile Include="Baekjoon\Class3++\boj_11403.cpp">
       <Filter>Source Files\class3++</Filter>
     </ClCompile>
-    <ClCompile Include="boj_1107.cpp">
+    <ClCompile Include="Baekjoon\Class3++\boj_1107.cpp">
       <Filter>Source Files\class3++</Filter>
     </ClCompile>
-    <ClCompile Include="boj_5430.cpp">
+    <ClCompile Include="Baekjoon\Class3++\boj_5430.cpp">
       <Filter>Source Files\class3++</Filter>
     </ClCompile>
-    <ClCompile Include="boj_7569.cpp">
+    <ClCompile Include="Baekjoon\Class3++\boj_7569.cpp">
       <Filter>Source Files\class3++</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Class3++\boj_9019.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

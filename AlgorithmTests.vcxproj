@@ -285,6 +285,7 @@
     <ClCompile Include="baekjoon\class3++\boj_5525.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="Baekjoon\Class3++\boj_9019.cpp" />
     <ClCompile Include="baekjoon\class3+\boj_1012.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -384,16 +385,16 @@
     <ClCompile Include="baekjoon\stepbystep\6_function\boj_15596.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="boj_1107.cpp">
+    <ClCompile Include="Baekjoon\Class3++\boj_1107.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="boj_2667.cpp">
+    <ClCompile Include="Baekjoon\Class3++\boj_2667.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="boj_5430.cpp">
+    <ClCompile Include="Baekjoon\Class3++\boj_5430.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="boj_6064.cpp">
+    <ClCompile Include="Baekjoon\Class3++\boj_6064.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="programmers\fill_in_puzzle_pieces\solution.cpp">
@@ -411,13 +412,15 @@
     <ClCompile Include="test.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="boj_11286.cpp">
+    <ClCompile Include="Baekjoon\Class3++\boj_11286.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="boj_11403.cpp">
+    <ClCompile Include="Baekjoon\Class3++\boj_11403.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="boj_7569.cpp" />
+    <ClCompile Include="Baekjoon\Class3++\boj_7569.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="in.txt" />
