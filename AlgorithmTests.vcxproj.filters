@@ -342,6 +342,9 @@
     <ClCompile Include="Baekjoon\Class3++\boj_9019.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\Class3++\boj_10026.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore">
