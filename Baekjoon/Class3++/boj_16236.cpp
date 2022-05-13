@@ -30,8 +30,6 @@ bool checkReachable(int i, int j) {
 		return true;
 }
 
-
-
 int findFish(int& iFish, int& jFish) {
 	queue<pair<pair<int, int>, int>> bfsQ;
 	int distance = 0;
