@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int arr[100][100];
+int area[100][100];
 int n;
 
 int main() {
@@ -14,21 +14,21 @@ int main() {
 	int num;
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
-			scanf("%d", &arr[i][j]);
+			scanf("%d", &area[i][j]);
 		}
 	}
 	for (int k = 0; k < n; k++) {
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
-				if (arr[i][k] == 1 && arr[k][j] == 1) {
-					arr[i][j] = 1;
+				if (area[i][k] == 1 && area[k][j] == 1) {
+					area[i][j] = 1;
 				}
 			}
 		}
 	}
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
-			printf("%d ", arr[i][j]);
+			printf("%d ", area[i][j]);
 		}
 		printf("\n");
 	}

@@ -1,32 +1,40 @@
+#include <string>
+#include <vector>
+#include <queue>
+#include <utility>
 #include <iostream>
+#include <sstream>
+#include <map>
+
+using namespace std;
+#include <string>
+#include <vector>
 
 using namespace std;
 
-void main() {
-	int dice[7] = { 0 };
 
-	for (int i = 0; i < 3; i++) {
-		int d;
-		cin >> d;
-		dice[d]++;
-	}
+void dfs(vector<int>& numbers, int next, int cur, const int& target, int& answer) {
+    if ( next == numbers.size()) {
+        if (cur == target) answer++;
+        return;
+    } 
 
-	int max = 1;
-	for (int i = 2; i < 7; i++) {
-		if (dice[max] <= dice[i]) {
-			max = i;
-		}
-	}
+    dfs(numbers, next + 1, cur + numbers[next], target, answer);
+    dfs(numbers, next + 1, cur - numbers[next], target, answer);
 
-	if (dice[max] == 3) {
-		cout << 10000 + max * 1000 << endl;
-	}
-	else if (dice[max] == 2) {
-		cout << 1000 + max * 100 << endl;
-	}
-	else {
-		cout << max * 100 << endl;
-	}
+}
 
-	return;
+int solution(vector<int> numbers, int target) {
+    int answer = 0;
+    dfs(numbers, 0, 0, target, answer);
+
+    return answer;
+}
+
+int main() {
+    vector<int> data = { 4, 1, 2, 1 };
+    int target = 4;
+    cout << solution(data, target) << endl;
+
+  
 }

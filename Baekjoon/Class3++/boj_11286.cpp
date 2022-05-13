@@ -5,7 +5,7 @@
 #include <queue>
 
 using namespace std;
-int arr[100000];
+int area[100000];
 int end_index = 1; //insertable index
 
 int absolute(int x) {
@@ -61,10 +61,10 @@ bool isABeforeB(int a, int b) {
 
 void heap_push(int x) {
 	int index = end_index++;
-	arr[index] = x;
+	area[index] = x;
 
-	while (index != 1 && isABeforeB(arr[index], arr[index / 2])) {
-		swap(arr[index], arr[index / 2]);
+	while (index != 1 && isABeforeB(area[index], area[index / 2])) {
+		swap(area[index], area[index / 2]);
 		index /= 2;
 	}
 }
@@ -73,19 +73,19 @@ int heap_pop() {
 	if (end_index == 1) {	//empty
 		return 0;
 	}
-	int top = arr[1];
+	int top = area[1];
 	int parent = 1;
 	int child = parent * 2;
 
-	arr[1] = arr[--end_index];	//if end == 5, arr = [x, 1, 2, 3, 4, 0, 0, 0, ]
+	area[1] = area[--end_index];	//if end == 5, arr = [x, 1, 2, 3, 4, 0, 0, 0, ]
 								//                                   ¤¤>end
 	while (child < end_index) {
 		// get the appropriate child
-		if (child + 1 < end_index && !isABeforeB(arr[child], arr[child + 1])) {
+		if (child + 1 < end_index && !isABeforeB(area[child], area[child + 1])) {
 			child++;
 		}
-		if (isABeforeB(arr[child], arr[parent])) {
-			swap(arr[child], arr[parent]);
+		if (isABeforeB(area[child], area[parent])) {
+			swap(area[child], area[parent]);
 			parent = child;
 			child = parent * 2;
 		}

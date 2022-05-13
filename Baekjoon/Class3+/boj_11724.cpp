@@ -44,12 +44,12 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-int arr[1010];
+int area[1010];
 int ranker[1010];
 
 int find(int n){
-    if(arr[n]!=n) {
-        return arr[n] = find(arr[n]);
+    if(area[n]!=n) {
+        return area[n] = find(area[n]);
     }
     else {
         return n;
@@ -62,10 +62,10 @@ void uni(int a,int b){
     if(a==b) return;
 
     if(ranker[a]<ranker[b]){
-        arr[b]=a;
+        area[b]=a;
     }
     else {
-        arr[a]=b;
+        area[a]=b;
         if(ranker[a]==ranker[b]) ranker[a]++;
     }
 }
@@ -77,7 +77,7 @@ int main(void){
     cin >> n >> m;
 
     for(int i=1;i<=n;i++) {
-        arr[i]=i;
+        area[i]=i;
         ranker[i]=0;
     }
     for(int i=0;i<m;i++) {
@@ -86,7 +86,7 @@ int main(void){
         uni(u,v);
     }
     int count = 0;
-    for(int i=1;i<=n;i++) if(arr[i]==i) count++;
+    for(int i=1;i<=n;i++) if(area[i]==i) count++;
     cout << count;
     return 0;
 }

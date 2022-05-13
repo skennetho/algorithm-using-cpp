@@ -7,28 +7,28 @@
 
 using namespace std;
 
-int arr[25][25];
+int area[25][25];
 int n;
 vector<int> residentSizes;
 
 void countResidents(int i, int j, int& cnt) {
 	// 가로세로방향으로 나아감.
-	if (arr[i][j] == 0) {
+	if (area[i][j] == 0) {
 		return;
 	}
-	arr[i][j] = 0;
+	area[i][j] = 0;
 	cnt += 1;
 
-	if (i - 1 >= 0 && arr[i-1][j] == 1) {
+	if (i - 1 >= 0 && area[i-1][j] == 1) {
 		countResidents(i - 1, j, cnt);
 	}
-	if (i + 1 < n && arr[i + 1][j] == 1) {
+	if (i + 1 < n && area[i + 1][j] == 1) {
 		countResidents(i + 1, j, cnt);
 	}
-	if (j - 1 >= 0 && arr[i][j - 1] == 1) {
+	if (j - 1 >= 0 && area[i][j - 1] == 1) {
 		countResidents(i, j - 1, cnt);
 	}
-	if (j + 1 < n && arr[i][j + 1] == 1) {
+	if (j + 1 < n && area[i][j + 1] == 1) {
 		countResidents(i, j + 1, cnt);
 	}
 }
@@ -63,14 +63,14 @@ int main() {
 		char c[25];
 		scanf("%s", &c);
 		for (int j = 0; j < n; j++) {
-			arr[i][j] = c[j] - '0';
+			area[i][j] = c[j] - '0';
 		}
 	}
 
 	residentSizes.clear();
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
-			if (arr[i][j] == 1) {
+			if (area[i][j] == 1) {
 				int cnt = 0;
 				countResidents(i, j, cnt);
 				residentSizes.emplace_back(cnt);

@@ -9,14 +9,14 @@ using namespace std;
 int width, height;
 int tomato_left = 0;
 int tomato_riped_today = 0;
-int arr[1000][1000];
+int area[1000][1000];
 queue<pair<int, int>> ripe_tomato_que;    //(col, row)
 
 int ripenTomato(int col, int row) {
-    if(arr[col][row] != 0) {
+    if(area[col][row] != 0) {
         return 0;
     }
-    arr[col][row] = 1;
+    area[col][row] = 1;
     ripe_tomato_que.emplace(make_pair(col,row));
     return 1;
 }
@@ -71,12 +71,12 @@ int main() {
 
     for (int i = 0; i < height; i++) {
         for (int j = 0; j < width; j++) {
-            scanf("%d", &arr[i][j]);
-            if (arr[i][j] == 1) {
+            scanf("%d", &area[i][j]);
+            if (area[i][j] == 1) {
                 ripe_tomato_que.emplace(make_pair(i,j));
                 tomato_riped_today++;
                 tomato_left--;
-            } else if (arr[i][j] == -1) {
+            } else if (area[i][j] == -1) {
                 tomato_left--;
             }
         }
