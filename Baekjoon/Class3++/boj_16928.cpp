@@ -38,6 +38,5 @@ int main() {
                 visited[i] = true;
             }
         }
-    }
     return 0;
 }
