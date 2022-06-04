@@ -1,54 +1,50 @@
 #include <iostream>
-#include <queue>
-
 using namespace std;
 
-int shortcuts[101] = { 0 };
 
-int main() {
-    int N, M; 
-    scanf("%d %d", &N, &M);
+int n;
+int pick[128][128];
+int cnt[2];
 
-    int from, to;
-    for (int i = 0; i < N + M; ++i) {
-        scanf("%d %d", &from, &to);
-        shortcuts[from] = to;
-    }
+void check(int n, int fromi, int fromj) {
+	int base = pick[fromi][fromj];
+	if (n == 1) {
+		++cnt[base];
+		return;
+	}
 
-    bool visited[101] = { false };
-    queue<pair<int, int>> bfsQ;
+	for (int i = fromi; i < fromi + n; i++) {
+		for (int j = fromj; j < fromj + n; j++) {
+			if (base != pick[i][j]) {
+				base = -1; 
+				break;
+			}
+		}
+	}
 
-    bfsQ.push({ 1,0 });
-    visited[1] = true;
-
-    while (!bfsQ.empty()) {
-        int current = bfsQ.front().first;
-        int dice = bfsQ.front().second;
-        bfsQ.pop();
-
-        if (current + 6 >= 100) {
-             cout<< dice +1 <<endl;
-             break;
-        }
-
-        for (int i = current + 1; i <= current + 6 && i <= 100; i++) {
-            if (!visited[i]) {
-                bfsQ.push({ shortcuts[i] > 0 ? shortcuts[i] : i, dice + 1 });
-                visited[i] = true;
-            }
-        }
-    }
-    return 0;
+	if (base == -1) {
+		int nextN = n / 2;
+		check(nextN, fromi, fromj);
+		check(nextN, fromi + nextN, fromj);
+		check(nextN, fromi, fromj + nextN);
+		check(nextN, fromi + nextN, fromj + nextN);
+		return;
+	}
+	else {
+		++cnt[base];
+	}
 }
 
-/*
-    ladders는 올라간다.
-    snakes는 내려간다.
+int main() {
+	scanf("%d", &n);
+	for (int i = 0; i < n; ++i) {
+		for (int j = 0; j < n; ++j) {
+			scanf("%d", &pick[i][j]);
+		}
+	}
 
-    뱀과 주사위를 그저 지름길로 퉁쳐도 된다. 모든 경우를 뒤져야알수 있기 때문. 그럼 BFS?
-    bfs에서 next노드는 다음과 같다.
-    - 주사위 한번으로 도달할수 있는 지름길"들"(뒤 또는 앞)
-        노드의 경우 visited체크를 해준다.
-    - 주사위 6.
 
-    */
+	check(n, 0, 0);
+
+	cout << cnt[0] << " " << cnt[1] << endl;
+}
