@@ -372,6 +372,15 @@
     <ClCompile Include="Baekjoon\Class4\boj_11725.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Baekjoon\Class4\boj_15663.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Class4\boj_15666.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Class4\boj_16953.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore">
