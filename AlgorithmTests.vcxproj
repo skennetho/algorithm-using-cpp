@@ -394,7 +394,13 @@
     <ClCompile Include="Baekjoon\Class4\boj_15666.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Baekjoon\Class4\boj_16953.cpp" />
+    <ClCompile Include="Baekjoon\Class4\boj_1629.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Class4\boj_16953.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Baekjoon\Class4\boj_1991.cpp" />
     <ClCompile Include="Baekjoon\Class4\boj_2407.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
